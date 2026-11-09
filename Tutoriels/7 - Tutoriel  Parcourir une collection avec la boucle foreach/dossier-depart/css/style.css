@@ -1,0 +1,380 @@
+/* =========================================================
+   STYLE DU BLOG PERSONNEL (style.css)
+   Feuille de style unifiée (Niveau N1 - S2 à S6)
+   Couleurs brutes sans variables natives, styles de base
+========================================================= */
+
+/* 1. TYPOGRAPHIE & BASE GLOBALE */
+body {
+    margin: 0;
+    color: #1f2937;
+    background-color: #f9fafb;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 2. EN-TÊTE & NAVIGATION */
+.en-tete-site, .en-tete {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 16px 0;
+}
+
+.barre-navigation, .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo-sombre {
+    color: #111827;
+}
+
+.logo-couleur {
+    color: #2673e8;
+}
+
+.liens-navigation {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.liens-navigation a {
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.liens-navigation a.actif {
+    color: #2673e8;
+}
+
+/* 3. BANNIÈRE D'ACCUEIL (HERO) */
+.banniere-accueil {
+    background-color: #ffffff;
+    padding: 64px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.banniere-accueil h1 {
+    font-size: 2.5rem;
+    color: #111827;
+    margin: 0 0 16px;
+}
+
+.banniere-accueil h1 span {
+    color: #2673e8;
+}
+
+.banniere-accueil p {
+    color: #6b7280;
+    font-size: 1.15rem;
+    max-width: 650px;
+    margin: 0 auto 24px;
+}
+
+.actions-banniere {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+/* 4. BOUTONS */
+.bouton-principal {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2673e8;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.bouton-secondaire {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #1f2937;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* 5. ARTICLES & GRILLE D'ACCUEIL */
+.section-articles {
+    padding: 48px 0;
+}
+
+.conteneur-articles {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.filtre-categories {
+    margin-bottom: 32px;
+}
+
+.filtre-categories h2 {
+    color: #111827;
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.liste-filtres {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.pilule-filtre {
+    padding: 8px 16px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 9999px;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.pilule-filtre.actif {
+    background-color: #2673e8;
+    color: #ffffff;
+    border-color: #2673e8;
+}
+
+.entete-liste-articles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.entete-liste-articles h2 {
+    color: #111827;
+    margin: 0;
+}
+
+.entete-liste-articles p {
+    color: #6b7280;
+    margin: 4px 0 0;
+}
+
+.grille-articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+/* 6. CARTE D'ARTICLE */
+.carte-article {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.carte-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.etiquette-categorie, .badge-categorie {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 16px 16px 0;
+    background-color: #f0f6ff;
+    color: #1c5bba;
+}
+
+.carte-contenu {
+    padding: 16px;
+}
+
+.carte-contenu h3 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 1.2rem;
+}
+
+.carte-contenu p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin: 0 0 16px;
+}
+
+.carte-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #9ca3af;
+    font-size: 0.85rem;
+    border-top: 1px solid #f3f4f6;
+    padding-top: 12px;
+}
+
+/* 7. PAGE DE DÉTAIL D'ARTICLE */
+.entete-article-detail {
+    text-align: center;
+    padding: 48px 0 24px;
+}
+
+.entete-article-detail h1 {
+    font-size: 2.25rem;
+    color: #111827;
+    max-width: 800px;
+    margin: 16px auto;
+}
+
+.auteur-article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.auteur-article img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.couverture-article {
+    margin: 24px 0;
+}
+
+.couverture-article img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.corps-texte {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #1f2937;
+    line-height: 1.8;
+}
+
+.actions-retour {
+    max-width: 800px;
+    margin: 32px auto 0;
+}
+
+/* 8. PAGE CATÉGORIES & À PROPOS */
+.en-tete-categorie {
+    margin-bottom: 32px;
+}
+
+.grille-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 24px;
+}
+
+.carte-categorie {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+}
+
+.carte-categorie h2 {
+    color: #111827;
+    margin: 0 0 16px;
+}
+
+.page-apropos {
+    padding: 48px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.liste-technologies {
+    padding-left: 20px;
+    color: #1f2937;
+}
+
+/* 9. PIED DE PAGE */
+.pied-de-page {
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    padding: 48px 0 24px;
+    margin-top: 64px;
+}
+
+.conteneur-pied-de-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px;
+}
+
+.colonne-pied-de-page h2 {
+    font-size: 1.1rem;
+    color: #111827;
+    margin: 0 0 12px;
+}
+
+.colonne-pied-de-page p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.colonne-pied-de-page ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.colonne-pied-de-page ul li {
+    margin-bottom: 8px;
+}
+
+.colonne-pied-de-page ul a {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+.bas-pied-de-page {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    padding: 16px 20px 0;
+    border-top: 1px solid #f3f4f6;
+    text-align: center;
+    color: #9ca3af;
+    font-size: 0.85rem;
+}
