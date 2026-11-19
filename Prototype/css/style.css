@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  max-width: 1440px;
+  background-color: #fff5f7;
+}
+header {
+  background-color: #fff5f7;
+  display: flex;
+  justify-content: space-between;
+}
+header h3 {
+  font-weight: 800;
+  color: #3d2630;
+  margin: 20px;
+  font-size: 30px;
+}
+header span {
+  color: #be185d;
+}
+nav {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #3d2630;
+  margin: 10px;
+  padding: 10px;
+}
+#Projet {
+  border-bottom: 3px solid #be185d;
+}
+.hero {
+  background-image: url("../images/backround.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  padding-top: 40px;
+}
+.hero h1 {
+  margin: 0;
+  color: #be185d;
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+p {
+  color: #3d2630;
+}
+.hero > p {
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+}
+.hero-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.hero-cards p:hover {
+  background-color: #fce7ef;
+}
+.hero-cards p {
+  border: 1px solid #f9a8c4;
+  box-shadow: 0px 5px 15px rgba(190, 24, 93, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 40%;
+  height: auto;
+  text-align: center;
+}
+.hero-cards span {
+  font-size: 35px;
+  color: #be185d;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.list {
+  padding: 20px;
+}
+article {
+  background-color: #fff5f7;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+.hmg {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+h2 {
+  margin: 0;
+  padding: 10px;
+}
+.card {
+  width: 45%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #fce7ef;
+  border-radius: 10px;
+  gap: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(190, 24, 93, 0.22);
+  overflow: hidden;
+}
+.card:hover {
+    background-color: #FFF5F7;
+}
+.card img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+.content {
+  padding: 25px;
+}
+.web {
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+    border: 1px solid #93C5FD;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.javascript {
+    background-color: #FEF3C7;
+    color: #92400E;
+    border: 1px solid #FCD34D;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.desktop {
+    background-color: #FCE7EF;
+    color: #BE185D;
+    border: 1px solid #F9A8C4;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.done {
+    background-color: transparent;
+    color: #15803D;
+    border: 1px solid #15803D;
+    padding: 5px 12px;
+    border-radius: 6px;
+}
+
+.in-progress {
+    background-color: transparent;
+    color: #6D28D9;
+    border: 1px solid #6D28D9;
+    padding: 5px 12px;
+    border-radius: 6px;
+}
+
+
+footer {
+    background-color: #FCE7EF;
+    color: #3D2630;
+    padding: 35px 7%;
+    border-top: 1px solid #F9A8C4;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 30px;
+}
+
+.footer-info {
+    width: 45%;
+}
+
+.footer-info h2 {
+    margin: 0 0 20px;
+    color: #3D2630;
+}
+
+.footer-info h2 span {
+    color: #BE185D;
+}
+
+.footer-info p {
+    color: #3D2630;
+    line-height: 1.7;
+    max-width: 550px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #3D2630;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #BE185D;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #F9A8C4;
+}
+
+footer .copyright {
+    text-align: center;
+    color: #3D2630;
+    margin: 20px 0 0;
+}
