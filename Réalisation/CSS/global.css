@@ -1,0 +1,44 @@
+:root {
+    --teal: #0f4c5c;
+    --gold: #e9a23b;
+    --background: #f6f4ef;
+    --white: #ffffff;
+    --text: #202a2e;
+    --grey: #d9dedf;
+    --light-blue: #e9f3f5;
+    --muted-text: #586367;
+    --problem-red: #b23a48;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--teal);
+}
+
+p {
+    font-size: 16px;
+}

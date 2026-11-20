@@ -1,0 +1,274 @@
+
+/* =========================================
+   GENERAL
+========================================= */
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main {
+    width: 100%;
+}
+
+main section {
+    padding: 40px 7%;
+}
+
+main h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    padding-left: 12px;
+    border-left: 4px solid var(--gold);
+}
+
+
+/* =========================================
+   1. PROJECTS INTRODUCTION
+========================================= */
+
+.projects-intro {
+    background-color: var(--light-blue);
+    text-align: center;
+    padding: 60px 7%;
+    border-bottom: 1px solid var(--grey);
+}
+
+.projects-intro h1 {
+    font-size: 34px;
+    margin-bottom: 12px;
+    color: var(--teal);
+}
+
+.projects-intro p {
+    color: var(--muted-text);
+    font-size: 16px;
+}
+
+
+/* =========================================
+   2. PROJECTS STATISTICS
+========================================= */
+
+.projects-stats {
+    background-color: var(--white);
+}
+
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat-card {
+    flex: 1;
+    min-width: 180px;
+    padding: 24px 20px;
+    background-color: var(--background);
+    border: 1px solid var(--grey);
+    border-top: 4px solid var(--teal);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(15, 76, 92, 0.05);
+}
+
+.stat-card:nth-child(2) {
+    border-top-color: var(--gold);
+    background-color: #fbf6ec;
+}
+
+.stat-card:nth-child(3) {
+    border-top-color: var(--muted-text);
+    background-color: #f0f2f2;
+}
+
+.stat-card:nth-child(4) {
+    border-top-color: var(--teal);
+    background-color: var(--light-blue);
+}
+
+.stat-card:hover {
+    box-shadow: 0 4px 10px rgba(15, 76, 92, 0.09);
+}
+
+.stat-card h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+    color: var(--muted-text);
+}
+
+.stat-card p {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--teal);
+}
+
+
+/* =========================================
+   3. ALL PROJECTS
+========================================= */
+
+.all-projects {
+    background-color: var(--background);
+    border-top: 1px solid var(--grey);
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/* =========================================
+   4. PROJECT CARD
+========================================= */
+
+.project-card {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+    background-color: var(--white);
+    border: 1px solid var(--grey);
+    border-top: 5px solid var(--teal);
+    border-radius: 8px;
+}
+
+.project-card:hover {
+    box-shadow: 0 5px 12px rgba(15, 76, 92, 0.15);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--light-blue);
+}
+
+.project-card h3 {
+    font-size: 20px;
+    color: var(--teal);
+    margin-bottom: 5px;
+}
+
+.project-card p {
+    margin-bottom: 12px;
+    color: var(--muted-text);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.project-card p:first-of-type {
+    color: var(--text);
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   5. CARD LINKS
+========================================= */
+
+.project-card a {
+    display: block;
+    margin-top: auto;
+    padding: 10px;
+    background-color: var(--teal);
+    color: var(--white);
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    background-color: var(--gold);
+    color: var(--text);
+}
+
+
+/* =========================================
+   6. STATUS BADGES
+========================================= */
+
+.status {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* En cours */
+
+.card-header .status-progress {
+    background-color: var(--light-blue);
+    color: var(--teal);
+    border: 1px solid #c5dfe3;
+}
+
+/* En attente */
+
+.card-header .status-pending {
+    background-color: #fbf0da;
+    color: #95600e;
+    border: 1px solid #f0d9a8;
+}
+
+/* Terminé */
+
+.card-header .status-completed {
+    background-color: #e5eee8;
+    color: #356747;
+    border: 1px solid #cbdccf;
+}
+
+
+/* =========================================
+   7. RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    main section {
+        padding: 35px 5%;
+    }
+
+    .projects-intro h1 {
+        font-size: 26px;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .stat-card {
+        min-width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .projects-intro h1 {
+        font-size: 23px;
+    }
+
+    .card-header {
+        flex-direction: column;
+    }
+
+}
